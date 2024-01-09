@@ -100,22 +100,22 @@ function getPasswordOptions() {
     alert("Password must not exceed 128 characters");
     getPasswordOptions();
   } else {
-    userInput.push(passwordLength) 
+    userInput.push(passwordLength);
       //?Contain special characters
       if (confirm("If you would like your password to include SPECIAL CHARACTERS click ok, otherwise click cancel to continue")) {
-        userInput.push(specialCharacters)
+        userInput.push(specialCharacters);
       }
       //?Contain numericcharacters
       if (confirm("If you would like your password to include NUMERIC CHARACTERS click ok, otherwise click cancel to continue")) {
-        userInput.push(numericCharacters)
+        userInput.push(numericCharacters);
       }
       //?Contain uppercase characters
       if (confirm("If you would like your password to include UPPERCASE CHARACTERS click ok, otherwise click cancel to continue")) {
-        userInput.push(upperCasedCharacters)
+        userInput.push(upperCasedCharacters);
       }
       //?Contain lowercase characters
       if (confirm("If you would like your password to include LOWERCASE CHARACTERS click ok, otherwise click cancel to continue")) {
-        userInput.push(lowerCasedCharacters)
+        userInput.push(lowerCasedCharacters);
       }  
   }
 
@@ -161,5 +161,3 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener('click', writePassword);
-
-//generateBtn.onlcick(getPasswordOptions());
