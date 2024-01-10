@@ -92,6 +92,7 @@ var upperCasedCharacters = [
 var userInput = [];
 function getPasswordOptions() {
   //Password length
+  userInput = [];
   var passwordLength = prompt("How many characters would you like your password to contain?");
   if (passwordLength < 8) {
     alert("Password must contain at least 8 characters");
